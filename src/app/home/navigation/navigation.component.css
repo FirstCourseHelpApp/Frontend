@@ -1,0 +1,53 @@
+.container {
+  width: calc(100% - 40px);
+  background-color: #FFFFFF;
+  padding: 6px 20px 5px 20px;
+}
+
+.container * {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.logo-container p {
+  font-family: "Aqum two Small caps", serif;
+  margin: 0 0 0 81px;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #171934;
+  line-height: 29px;
+  width: 216px;
+  text-align: center;
+}
+
+.logo-container div {
+  margin: 2px 0 2px 6px;
+  width: 70px;
+  height: 25px;
+  background: url("src/assets/img/IRIT_RTF_logo.svg") no-repeat;
+  background-size: 70px 25px;
+}
+
+ul {
+  margin: 4px 0 4px 0;
+  padding: 0;
+}
+
+ul li {
+  font-family: "Aqum two Classic", serif;
+  color: #171934;
+  font-size: 17px;
+  line-height: 21px;
+  margin: 0 59px 0 0;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+.account-img {
+  width: 24px;
+  height: 28px;
+  background: url("src/assets/img/account_icon.svg") no-repeat;
+  background-size: 24px 28px;
+}

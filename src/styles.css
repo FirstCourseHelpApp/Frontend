@@ -85,3 +85,17 @@
   src: local("Golos Text Regular"),
   url("src/assets/fonts/golos-ui_regular.ttf") format("ttf");
 }
+
+/*TODO: убрать цвет*/
+
+html {
+  background: #171934;
+}
+
+body {
+  margin: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
