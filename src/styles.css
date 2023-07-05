@@ -1,1 +1,87 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Aqum two Classic";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Aqum two Classic"),
+  url("src/assets/fonts/Aqum2Classic.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Aqum two Small caps";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Aqum two Small caps"),
+  url("src/assets/fonts/Aqum2Smallcaps.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Concrete Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Concrete Regular"),
+  url("src/assets/fonts/Concrete-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Golos Text Black"),
+  url("src/assets/fonts/golos-text_black.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Golos Text Bold"),
+  url("src/assets/fonts/golos-text_bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Golos Text Demibold"),
+  url("src/assets/fonts/golos-text_demibold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Golos Text Medium"),
+  url("src/assets/fonts/golos-text_medium.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Golos Text Regular"),
+  url("src/assets/fonts/golos-text_regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Golos UI";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Golos Text Bold"),
+  url("src/assets/fonts/golos-ui_bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Golos UI";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Golos Text Medium"),
+  url("src/assets/fonts/golos-ui_medium.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Golos UI";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Golos Text Regular"),
+  url("src/assets/fonts/golos-ui_regular.ttf") format("ttf");
+}
