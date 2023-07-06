@@ -49,6 +49,8 @@
   position: absolute;
 }
 
+/*кнопка курса*/
+
 .course-button {
   border: none;
   color: #FFFFFF;
@@ -72,4 +74,44 @@
 
 .course-button:active {
   background: #B2CFFF;
+}
+
+/*текст главной*/
+
+.main-text {
+  max-width: 1152px;
+  padding: 0 20px 0 20px;
+  margin: 85px auto 150px auto;
+}
+
+.main-text h2 {
+  font-family: "Aqum two Small caps", serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #171934;
+}
+
+.help-text {
+  margin: 50px 0 0 20px;
+  font-family: "Golos Text", serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.help-text p {
+  margin: 0;
+}
+
+.help-text p + p, .help-text ul + p {
+  margin: 40px 0 0 0;
+}
+
+.help-text ul {
+  margin: 10px 0 0 20px;
+  padding: 0;
+}
+
+.help-text li span {
+  font-weight: 700;
 }
