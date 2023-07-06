@@ -5,6 +5,7 @@ import { CourseComponent } from './course/course.component';
 import { CourseArticleComponent } from './course/course-article/course-article.component';
 import { CourseTestComponent } from './course/course-test/course-test.component';
 import { CourseChapterComponent } from './course/course-chapter/course-chapter.component';
+import {CourseHomeComponent} from './course/course-home/course-home.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,10 @@ const routes: Routes = [
     path: 'course',
     component: CourseComponent,
     children: [
+      {
+        path: '',
+        component: CourseHomeComponent
+      },
       {
         path: 'chapter',
         component: CourseChapterComponent
