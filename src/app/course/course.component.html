@@ -1,2 +1,22 @@
-я - главная курса
+<section class="hero">
+  <div class="hero-content">
+    <h1>
+      Курс ориентирования в учебном процессе ИРИТ-РТФ
+    </h1>
+    <div class="progress-container">
+      <p>
+        Твой прогресс:&nbsp;&nbsp;&nbsp;
+      </p>
+      <p>
+        {{progressPercent}}%
+      </p>
+      <div class="progress-bar">
+        <ng-container *ngFor="let chapter of chapters">
+          <div class="progress-part" [class.done]="chapter.isCompleted"></div>
+          <div class="progress-line"></div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</section>
 <router-outlet></router-outlet>

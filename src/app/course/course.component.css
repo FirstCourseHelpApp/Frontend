@@ -1,0 +1,65 @@
+.hero {
+  width: 100%;
+  background: #171934;
+  color: #FFFFFF;
+  padding: 33px 0 11px 0;
+}
+
+.hero-content {
+  max-width: 1152px;
+  margin: 0 auto 0 auto;
+  padding: 0 15px 0 15px;
+}
+
+.hero h1, .hero p {
+  font-family: "Aqum two Small caps", serif;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 190.5%;
+  text-decoration-line: underline;
+  margin: 0;
+}
+
+.hero p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 190.5%;
+}
+
+.progress-container {
+  margin: 52px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.progress-bar {
+  padding: 10px 0 0 0;
+  margin: 0 0 0 86px;
+  display: flex;
+}
+
+.progress-part {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: #B2CFFF 4px solid;
+}
+
+.progress-line {
+  margin: 8px 0 0 0;
+  width: 45px;
+  height: 4px;
+  background: #B2CFFF;
+}
+
+.progress-bar .progress-line:last-child {
+  display: none;
+}
+
+.done {
+  background: #B2CFFF;
+}
