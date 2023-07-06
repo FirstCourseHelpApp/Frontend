@@ -1,19 +1,27 @@
 .container {
   width: 100%;
   background-color: #FFFFFF;
-  padding: 6px 0 5px 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  /*justify-content: space-between;*/
 }
 
-.container * {
-  display: inline-block;
-  vertical-align: top;
+section {
+  height: 2000px;
+  width: 100%;
 }
 
 /*лого*/
 
-.logo-container p {
-  font-family: "Aqum two Small caps", serif;
+.logo-container {
+  display: flex;
   margin: 0 0 0 4.21875vw;
+}
+
+.logo-container p {
+  margin: 6px 0 5px 0;
+  font-family: "Aqum two Small caps", serif;
   font-size: 23px;
   text-transform: uppercase;
   color: #171934;
@@ -23,7 +31,7 @@
 }
 
 .logo-container div {
-  margin: 2px 0 2px 6px;
+  margin: 8px 0 7px 6px;
   width: 70px;
   height: 25px;
   background: url("src/assets/img/IRIT_RTF_logo.svg") no-repeat;
@@ -33,9 +41,12 @@
 /*навигационный список*/
 
 ul {
-  margin: 4px 0 4px 12.44791666666667vw;
+  margin: 10px 0 9px 12.44791666666667vw;
   padding: 0;
-  width: 695px;
+  /*position: relative;*/
+  left: calc(50vw - 346px);
+  width: 692px;
+  display: flex;
 }
 
 ul li {
@@ -43,9 +54,10 @@ ul li {
   color: #171934;
   font-size: 17px;
   line-height: 21px;
-  margin: 0 59px 0 0;
   cursor: pointer;
   user-select: none;
+  margin: 0 59px 0 0;
+  white-space: nowrap;
 }
 
 ul li:last-child {
@@ -63,7 +75,7 @@ ul li:active {
 /*кнопка аккаунта*/
 
 .account-img {
-  margin: 0 0 0 26.5625vw;
+  margin: 6px 4.3229vw 6px auto;
   width: 24px;
   height: 28px;
   background: url("src/assets/img/account_icon_active.svg") no-repeat;
