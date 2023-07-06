@@ -3,13 +3,6 @@
   background-color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
-  position: fixed;
-  /*justify-content: space-between;*/
-}
-
-section {
-  height: 2000px;
-  width: 100%;
 }
 
 /*лого*/
@@ -43,7 +36,6 @@ section {
 ul {
   margin: 10px 0 9px 12.44791666666667vw;
   padding: 0;
-  /*position: relative;*/
   left: calc(50vw - 346px);
   width: 692px;
   display: flex;
@@ -78,7 +70,7 @@ ul li:active {
   margin: 6px 4.3229vw 6px auto;
   width: 24px;
   height: 28px;
-  background: url("src/assets/img/account_icon_active.svg") no-repeat;
+  background: url("src/assets/img/account_icon.svg") no-repeat;
   background-size: 24px 28px;
   cursor: pointer;
 }

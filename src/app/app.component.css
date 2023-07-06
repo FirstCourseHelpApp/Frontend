@@ -1,0 +1,9 @@
+tui-root, .media{
+  min-height: 100vh;
+}
+
+navigation {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+}

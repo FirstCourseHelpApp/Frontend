@@ -1,0 +1,75 @@
+/*hero*/
+
+.hero {
+  background: #171934;
+  width: 100%;
+  padding: 55px 0 65px 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 763px;
+  padding: 0 20px 0 20px;
+  margin: 0 auto 0 auto;
+  user-select: none;
+}
+
+.hello-icon {
+  margin: 12px 0 0 0;
+  width: 123px;
+  height: 131px;
+  background: url("src/assets/img/hello_picture.svg");
+  background-size: 123px 131px;
+}
+
+.hello-text {
+  margin: 0 0 0 60px;
+  color: #FFFFFF;
+  font-family: "Aqum two Small caps", serif;
+  max-width: 580px;
+}
+
+.hello-text h1 {
+  line-height: 190.5%;
+  font-weight: 400;
+  margin: 0;
+  font-size: 22px;
+}
+
+.hello-text p {
+  line-height: 190.5%;
+  font-weight: 400;
+  margin: 0;
+  font-size: 20px;
+}
+
+.heart-icon {
+  font-size: 35px;
+  position: absolute;
+}
+
+.course-button {
+  border: none;
+  color: #FFFFFF;
+  background: #00A0FF;
+  font-family: "Golos UI", serif;
+  font-weight: 600;
+  font-size: 24px;
+  width: 250px;
+  height: 47px;
+  line-height: 29px;
+  padding: 0 0 3px 0;
+  border-radius: 18px;
+  display: block;
+  margin: 21px auto 0 auto;
+  cursor: pointer;
+}
+
+.course-button:hover {
+  background: #55B6FF;
+}
+
+.course-button:active {
+  background: #B2CFFF;
+}
