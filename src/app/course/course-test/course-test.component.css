@@ -1,0 +1,74 @@
+.header-container {
+  display: flex;
+  margin: 0 0 65px 0;
+}
+
+h2 {
+  margin: 0;
+  font-family: "Aqum two Small caps", serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.article-line {
+  margin: 11px 20px 0 20px;
+  width: 63px;
+  height: 3px;
+  background: #171934;
+}
+
+h3 {
+  margin: 1px 0 0 0;
+  font-family: "Aqum two Small caps", serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.tests-container {
+  margin: 0 0 0 20px;
+}
+
+h4 {
+  margin: 0 0 30px 0;
+  font-family: "Golos Text", serif;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.test-container {
+  margin: 0 0 55px 30px;
+}
+
+form .test-container:last-child {
+  margin-bottom: 0;
+}
+
+.question-text {
+  margin: 0 0 25px 10px;
+  font-family: "Golos Text", serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.check-button {
+  border: none;
+  cursor: pointer;
+  width: 165px;
+  height: 43px;
+  color: #FFFFFF;
+  background: #00A0FF;
+  font-family: "Golos UI", serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 0 3px 0;
+  border-radius: 20px;
+  margin: 65px 0 80px 10px;
+}
+
+.check-button:hover {
+  background: #55B6FF;
+}
+
+.check-button:active {
+  background: #B2CFFF;
+}

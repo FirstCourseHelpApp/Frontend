@@ -1,1 +1,48 @@
-я - тест курса
+<div class="header-container">
+  <h2>
+    1.&nbsp;&nbsp;1-е сентября - знакомство
+  </h2>
+  <div class="article-line"></div>
+  <h3>
+    Закрепим знания
+  </h3>
+</div>
+<div class="tests-container">
+  <form [formGroup]="testForm">
+    <ng-container *ngFor="let question of test; index as i">
+      <h4>{{i + 1}}.&nbsp;&nbsp;{{question.question}}</h4>
+      <div class="test-container">
+        <tui-radio-labeled
+          formControlName="question{{i}}"
+          size="m"
+          class="tui-space_bottom-5"
+          [item]="question.options[0].name"
+        >
+          <p class="question-text">
+            {{question.options[0].name}}
+          </p>
+        </tui-radio-labeled>
+        <tui-radio-labeled
+          formControlName="question{{i}}"
+          size="m"
+          class="tui-space_bottom-5"
+          [item]="question.options[1].name"
+        >
+          <p class="question-text">
+            {{question.options[1].name}}
+          </p>
+        </tui-radio-labeled>
+        <tui-radio-labeled
+          formControlName="question{{i}}"
+          size="m"
+          [item]="question.options[2].name"
+        >
+          <p class="question-text">
+            {{question.options[2].name}}
+          </p>
+        </tui-radio-labeled>
+      </div>
+    </ng-container>
+  </form>
+  <button (click)="sendAnswers()" class="check-button">Отправить</button>
+</div>

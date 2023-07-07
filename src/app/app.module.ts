@@ -14,6 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
 import {CourseHomeComponent} from './course/course-home/course-home.component';
 import {CourseChapterComponent} from './course/course-chapter/course-chapter.component';
 import {FooterComponent} from './footer/footer.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {TuiRadioLabeledModule} from '@taiga-ui/kit';
 
 @NgModule({
   declarations: [
@@ -29,12 +31,14 @@ import {FooterComponent} from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-      BrowserAnimationsModule,
-      TuiRootModule,
-      TuiDialogModule,
-      TuiAlertModule,
-    AppRoutingModule
-],
+    BrowserAnimationsModule,
+    TuiRootModule,
+    TuiDialogModule,
+    TuiAlertModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    TuiRadioLabeledModule
+  ],
   providers: [{ provide: TUI_SANITIZER, useClass: NgDompurifySanitizer }],
   bootstrap: [AppComponent]
 })
