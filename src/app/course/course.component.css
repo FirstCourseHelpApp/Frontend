@@ -90,3 +90,13 @@ h1 {
   font-weight: 400;
   line-height: 150%;
 }
+
+.continue-button:hover {
+  background: #55B6FF;
+  border: 2.5px solid #55B6FF;
+}
+
+.continue-button:active {
+  background: #00A0FF;
+  border: 2.5px solid #00A0FF;
+}
