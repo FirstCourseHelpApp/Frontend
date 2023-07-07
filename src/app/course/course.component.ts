@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class CourseComponent {
   public progressPercent: number = 100;
-  public chapters: {id: number, isCompleted: boolean}[] = [
+  public chapters: { id: number, isCompleted: boolean }[] = [
     {
       id: 0,
       isCompleted: true

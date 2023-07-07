@@ -39,6 +39,7 @@ ul {
   left: calc(50vw - 346px);
   width: 692px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 ul li {
