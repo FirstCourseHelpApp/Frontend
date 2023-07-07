@@ -63,3 +63,9 @@ h1 {
 .done {
   background: #B2CFFF;
 }
+
+.container {
+  width: min(1056px, calc(100vw - 30px));
+  margin: 63px auto 150px auto;
+  padding: 0 15px 0 15px;
+}
