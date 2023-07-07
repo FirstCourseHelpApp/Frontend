@@ -28,11 +28,31 @@ h3 {
   margin: 0 0 0 20px;
 }
 
-h4 {
+.question-header-container {
   margin: 0 0 30px 0;
+}
+
+h4 {
+  margin: 0 0 0 0;
   font-family: "Golos Text", serif;
   font-size: 21px;
   font-weight: 600;
+}
+
+
+.is-correct {
+  margin: 15px 0 0 30px;
+  font-family: "Golos Text", serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.no-correct {
+  color: #801A32;
+}
+
+.correct {
+  color: #0A7944;
 }
 
 .test-container {

@@ -3,9 +3,11 @@ import { FormControl, FormGroup } from '@angular/forms';
 
 class TestQuestion {
   question: string;
-  options: {name: string, isTrue: boolean}[];
+  correctAnswer: string;
+  options: string[];
 
-  constructor(question: string, options: {name: string, isTrue: boolean}[]) {
+  constructor(question: string, options: string[], correctAnswer: string) {
+    this.correctAnswer = correctAnswer;
     this.question = question;
     this.options = options;
   }
@@ -21,101 +23,69 @@ export class CourseTestComponent {
     {
       question: 'Как зовут директора ИРИТ-РТФ?',
       options: [
-        {
-          name: 'Обабков Иван Николаевич',
-          isTrue: false
-        },
-        {
-          name: 'Обабков Илья Иванович',
-          isTrue: false
-        },
-        {
-          name: 'Обабков Илья Николаевич',
-          isTrue: true
-        }
-      ]
+        'Обабков Иван Николаевич',
+        'Обабков Илья Иванович',
+        'Обабков Илья Николаевич'
+      ],
+      correctAnswer: 'Обабков Илья Николаевич'
     },
     {
       question: 'Кто лучший фронтендер?',
       options: [
-        {
-          name: 'Катя',
-          isTrue: false
-        },
-        {
-          name: 'Галя',
-          isTrue: false
-        },
-        {
-          name: 'Настя',
-          isTrue: true
-        }
-      ]
+        'Катя',
+        'Петя',
+        'Настя'
+      ],
+      correctAnswer: 'Настя'
     },
     {
       question: 'Кто лучший бэкендер?',
       options: [
-        {
-          name: 'Вася',
-          isTrue: false
-        },
-        {
-          name: 'Жора',
-          isTrue: true
-        },
-        {
-          name: 'Петя',
-          isTrue: false
-        }
-      ]
+        'Вася',
+        'Никита',
+        'Петя'
+      ],
+      correctAnswer: 'Никита'
     },
     {
       question: 'Как зовут собаку лучшего фронтендера?',
       options: [
-        {
-          name: 'Рик',
-          isTrue: true
-        },
-        {
-          name: 'Шарик',
-          isTrue: false
-        },
-        {
-          name: 'Бобик',
-          isTrue: false
-        }
-      ]
+        'Рик',
+        'Шарик',
+        'Бобик'
+      ],
+      correctAnswer: 'Рик'
     },
     {
       question: 'Кто лучшая команда?',
       options: [
-        {
-          name: 'Настя и Никита',
-          isTrue: true
-        },
-        {
-          name: 'Никита и Петя',
-          isTrue: false
-        },
-        {
-          name: 'Петя и Настя',
-          isTrue: false
-        }
-      ]
+        'Настя и Никита',
+        'Никита и Петя',
+        'Петя и Настя'
+      ],
+      correctAnswer: 'Настя и Никита'
     },
   ]
 
+  public isPassed: boolean = false;
+  public isCorrect: boolean[] = [];
+
   public testForm: FormGroup = new FormGroup(
     {
-      question0: new FormControl(this.test[0].options[0].name),
-      question1: new FormControl(this.test[1].options[0].name),
-      question2: new FormControl(this.test[2].options[0].name),
-      question3: new FormControl(this.test[3].options[0].name),
-      question4: new FormControl(this.test[4].options[0].name)
+      question0: new FormControl(this.test[0].options[0]),
+      question1: new FormControl(this.test[1].options[0]),
+      question2: new FormControl(this.test[2].options[0]),
+      question3: new FormControl(this.test[3].options[0]),
+      question4: new FormControl(this.test[4].options[0])
     },
   );
 
   public sendAnswers(): void {
-    console.log(this.testForm);
+    this.isPassed = true;
+    this.isCorrect = [];
+    for (let i: number = 0; i < this.test.length; i++) {
+      let answer = this.testForm.get('question' + i.toString())?.value;
+      this.isCorrect.push(answer === this.test[i].correctAnswer);
+    }
   }
 }

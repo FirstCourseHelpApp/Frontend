@@ -10,35 +10,39 @@
 <div class="tests-container">
   <form [formGroup]="testForm">
     <ng-container *ngFor="let question of test; index as i">
-      <h4>{{i + 1}}.&nbsp;&nbsp;{{question.question}}</h4>
+      <div class="question-header-container">
+        <h4>{{i + 1}}.&nbsp;&nbsp;{{question.question}}</h4>
+        <p class="is-correct no-correct" *ngIf="isPassed && !isCorrect[i]">Неверено, попробуй ещё</p>
+        <p class="is-correct correct" *ngIf="isPassed && isCorrect[i]">Правильно! Молодец!</p>
+      </div>
       <div class="test-container">
         <tui-radio-labeled
           formControlName="question{{i}}"
           size="m"
           class="tui-space_bottom-5"
-          [item]="question.options[0].name"
+          [item]="question.options[0]"
         >
           <p class="question-text">
-            {{question.options[0].name}}
+            {{question.options[0]}}
           </p>
         </tui-radio-labeled>
         <tui-radio-labeled
           formControlName="question{{i}}"
           size="m"
           class="tui-space_bottom-5"
-          [item]="question.options[1].name"
+          [item]="question.options[1]"
         >
           <p class="question-text">
-            {{question.options[1].name}}
+            {{question.options[1]}}
           </p>
         </tui-radio-labeled>
         <tui-radio-labeled
           formControlName="question{{i}}"
           size="m"
-          [item]="question.options[2].name"
+          [item]="question.options[2]"
         >
           <p class="question-text">
-            {{question.options[2].name}}
+            {{question.options[2]}}
           </p>
         </tui-radio-labeled>
       </div>
