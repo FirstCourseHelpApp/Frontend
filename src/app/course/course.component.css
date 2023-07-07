@@ -69,3 +69,24 @@ h1 {
   margin: 63px auto 150px auto;
   padding: 0 15px 0 15px;
 }
+
+.continue-button {
+  display: block;
+  position: absolute;
+  bottom: 130px;
+  left: calc(50vw - 109px);
+  margin: 300px auto 25px auto;
+  width: 218px;
+  height: 46px;
+  padding: 0 0 4px 0;
+  color: #FFFFFF;
+  background: #171934;
+  border-radius: 20px;
+  border: 2.5px solid #171934;
+  cursor: pointer;
+  font-family: "Golos UI", serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}

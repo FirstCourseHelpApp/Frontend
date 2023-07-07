@@ -13,6 +13,7 @@ import { CourseComponent } from './course/course.component';
 import { AppRoutingModule } from './app-routing.module';
 import {CourseHomeComponent} from './course/course-home/course-home.component';
 import {CourseChapterComponent} from './course/course-chapter/course-chapter.component';
+import {FooterComponent} from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {CourseChapterComponent} from './course/course-chapter/course-chapter.com
     CourseTestComponent,
     CourseComponent,
     CourseHomeComponent,
-    CourseChapterComponent
+    CourseChapterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
