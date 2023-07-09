@@ -9,6 +9,8 @@
 
 .logo-container {
   display: flex;
+  cursor: pointer;
+  user-select: none;
   margin: 0 0 0 4.21875vw;
 }
 
@@ -34,10 +36,10 @@
 /*навигационный список*/
 
 ul {
-  margin: 9px 0 10px 12.44791666666667vw;
+  margin: 9px 0 10px 17.13541666666667vw;
   padding: 0;
   left: calc(50vw - 346px);
-  width: 692px;
+  width: 515px;
   display: flex;
   flex-wrap: wrap;
 }

@@ -16,6 +16,9 @@ import {CourseChapterComponent} from './course/course-chapter/course-chapter.com
 import {FooterComponent} from './footer/footer.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {TuiRadioLabeledModule} from '@taiga-ui/kit';
+import {DictionaryComponent} from "./dictionary/dictionary.component";
+import {CharactersComponent} from "./characters/characters.component";
+import {MapsComponent} from "./maps/maps.component";
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import {TuiRadioLabeledModule} from '@taiga-ui/kit';
     CourseComponent,
     CourseHomeComponent,
     CourseChapterComponent,
-    FooterComponent
+    FooterComponent,
+    DictionaryComponent,
+    CharactersComponent,
+    MapsComponent
   ],
   imports: [
     BrowserModule,

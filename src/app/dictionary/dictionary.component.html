@@ -1,0 +1,19 @@
+<section class="hero">
+  <div class="hero-content">
+    <h1>
+      Словарик
+    </h1>
+    <p>
+      Перевод слов со студенческого жаргона ИРИТ-РТФ
+    </p>
+  </div>
+</section>
+<div class="container">
+  <div class="term-container" *ngFor="let term of terms">
+    <div class="word-container">
+      <h3>{{term.word}}</h3>
+    </div>
+    <div class="term-line"></div>
+    <p class="explanation">{{term.explanation}}</p>
+  </div>
+</div>

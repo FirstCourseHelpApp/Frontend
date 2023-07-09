@@ -2,15 +2,9 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 class TestQuestion {
-  question: string;
-  correctAnswer: string;
-  options: string[];
-
-  constructor(question: string, options: string[], correctAnswer: string) {
-    this.correctAnswer = correctAnswer;
-    this.question = question;
-    this.options = options;
-  }
+  question: string = '';
+  correctAnswer: string = '';
+  options: string[] = [];
 }
 
 @Component({

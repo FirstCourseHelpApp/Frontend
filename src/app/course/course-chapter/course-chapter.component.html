@@ -1,12 +1,12 @@
 <h2>
-  1.&nbsp;&nbsp;1-е сентября - знакомство
+  {{chapter.name}}
 </h2>
-<p>Познакомимся с директором, тьюторами и твоей новой семьёй - одногруппниками и кураторами.</p>
+<p>{{chapter.chapterDescription}}</p>
 <div class="chapter-container">
   <div class="chapter-line"></div>
   <ul>
-    <li>Кто был на линейке?</li>
-    <li>Первая встреча с группой</li>
-    <li>Добавление в беседы</li>
+    <li *ngFor="let subchapter of chapter.subchapters">
+      {{subchapter}}
+    </li>
   </ul>
 </div>

@@ -1,0 +1,86 @@
+.hero {
+  width: 100%;
+  background: #171934;
+  color: #FFFFFF;
+  padding: 33px 0 63px 0;
+}
+
+.hero-content {
+  max-width: 1152px;
+  margin: 0 auto 0 auto;
+  padding: 0 15px 0 15px;
+}
+
+.hero h1, .hero p {
+  font-family: "Aqum two Small caps", serif;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 190.5%;
+  text-decoration-line: underline;
+  margin: 0;
+}
+
+.hero p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 190.5%;
+}
+
+.container {
+  width: min(1056px, calc(100vw - 30px));
+  margin: 63px auto 150px auto;
+  padding: 0 15px 0 15px;
+}
+
+.term-container {
+  display: flex;
+  margin: 0 0 21px 0;
+}
+
+.container .term-container:last-child {
+  margin-bottom: 0;
+}
+
+.word-container {
+  width: max-content;
+  min-width: 122px;
+  padding: 6px 10px 5px 10px;
+  height: min-content;
+  min-height: 22px;
+  border-radius: 12px;
+  background: #B2CFFF;
+  align-self: center;
+}
+
+h3 {
+  width: min-content;
+  margin: 0 auto 0 auto;
+  font-family: "Aqum two Small caps", serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.term-line {
+  margin: 0 20px 0 20px;
+  align-self: center;
+  width: 34px;
+  height: 2px;
+  background: #171934;
+  border-radius: 10px;
+}
+
+.explanation {
+  display: block;
+  max-width: 811px;
+  width: fit-content;
+  margin: 0;
+  align-self: center;
+  font-family: "Golos Text", serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+}
