@@ -1,1 +1,19 @@
-Я - лица/имена
+<section class="hero">
+  <div class="hero-content">
+    <h1>
+      Лица/Имена
+    </h1>
+    <p>
+      Имена и фотографии главных людей нашего института
+    </p>
+  </div>
+</section>
+<div class="container">
+  <div class="characters-container">
+    <div class="character-container" *ngFor="let character of characters">
+      <img src="{{character.photo}}" alt="photo">
+      <h2>{{character.name}}</h2>
+      <p>{{character.job}}</p>
+    </div>
+  </div>
+</div>

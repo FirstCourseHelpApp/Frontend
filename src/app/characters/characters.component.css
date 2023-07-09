@@ -1,0 +1,66 @@
+.hero {
+  width: 100%;
+  background: #171934;
+  color: #FFFFFF;
+  padding: 33px 0 63px 0;
+}
+
+.hero-content {
+  max-width: 1152px;
+  margin: 0 auto 0 auto;
+  padding: 0 15px 0 15px;
+}
+
+.hero h1, .hero p {
+  font-family: "Aqum two Small caps", serif;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 190.5%;
+  text-decoration-line: underline;
+  margin: 0;
+}
+
+.hero p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 190.5%;
+}
+
+.container {
+  width: min(1056px, calc(100vw - 30px));
+  margin: 63px auto 150px auto;
+  padding: 0 15px 0 15px;
+}
+
+.characters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.character-container {
+  width: 402px;
+  margin: 0 40px 50px 40px;
+}
+
+h2, .character-container p {
+  font-family: "Golos Text", serif;
+  text-align: center;
+  line-height: 170%;
+}
+
+h2 {
+  margin: 15px 0 0 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.character-container p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
