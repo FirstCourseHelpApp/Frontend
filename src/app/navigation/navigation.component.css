@@ -87,3 +87,42 @@ ul li:active {
   background: url("src/assets/img/account_icon_active.svg") no-repeat;
   background-size: 24px 28px;
 }
+
+@media (min-width: 551px) and (max-width: 1150px){
+  .container {
+    display: block;
+    height: 80px;
+  }
+
+  ul {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .account-img {
+    position: absolute;
+    top: 0;
+    left: calc(100vw - 65px);
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    height: 110px;
+  }
+
+  .nav {
+    margin-left: 20px;
+  }
+
+  .nav li:last-child {
+    margin-top: 3px;
+  }
+
+  .account-img {
+    position: absolute;
+    top: 0;
+    left: calc(100vw - 65px);
+  }
+}
