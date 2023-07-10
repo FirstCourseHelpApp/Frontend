@@ -1,6 +1,6 @@
-import {Injectable} from '@angular/core';
-import {TestQuestion} from "../models/test.model";
-import {Chapter} from "../models/chapter.model";
+import { Injectable } from '@angular/core';
+import { TestQuestion } from "../models/test.model";
+import { Chapter } from "../models/chapter.model";
 
 
 @Injectable({

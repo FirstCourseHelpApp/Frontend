@@ -1,0 +1,16 @@
+<h2>С возвращением</h2>
+<p>Войди в аккаунт, чтобы мы могли вспомнить твой прогресс.</p>
+<form [formGroup]="logInForm">
+  <tui-input formControlName="email" tuiTextfieldSize="m">
+    Твоя почта
+    <input tuiTextfield type="email">
+  </tui-input>
+  <tui-input formControlName="password" tuiTextfieldSize="m">
+    Пароль
+    <input tuiTextfield type="password">
+  </tui-input>
+  <button (click)="onSubmit()" [disabled]="!logInForm.valid" class="log-in-button">
+    Войти в аккаунт
+  </button>
+</form>
+<button (click)="changeAuthType()" class="sign-up-button">У меня ещё нет аккаунта</button>

@@ -1,0 +1,11 @@
+.auth {
+  position: fixed;
+  border-radius: 25px;
+  background: #FFF;
+  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.20);
+  width: 344px;
+  height: 395px;
+  padding: 43px 53px 30px 53px;
+  top: 200px;
+  left: calc(50vw - 225px);
+}

@@ -1,0 +1,20 @@
+<h2>Давай познакомимся</h2>
+<p>Создай аккаунт, чтобы мы могли запомнить твой прогресс.</p>
+<form [formGroup]="signUpForm">
+  <tui-input formControlName="email" tuiTextfieldSize="m">
+    Твоя почта
+    <input tuiTextfield type="email">
+  </tui-input>
+  <tui-input formControlName="password" tuiTextfieldSize="m">
+    Пароль
+    <input tuiTextfield type="password">
+  </tui-input>
+  <tui-input formControlName="confirmPassword" tuiTextfieldSize="m">
+    Повторение пароля
+    <input tuiTextfield type="password">
+  </tui-input>
+  <button (click)="onSubmit()" [disabled]="!signUpForm.valid" class="sign-up-button">
+    Зарегистрироваться
+  </button>
+</form>
+<button (click)="changeAuthType()" class="log-in-button">У меня уже есть аккаунт</button>

@@ -4,6 +4,7 @@ h2 {
   font-weight: 400;
   line-height: 30px;
   margin: 0 0 15px 0;
+  user-select: none;
 }
 
 p {
@@ -39,8 +40,19 @@ li {
   background-position-x: left;
   background-position-y: 18px;
   background-size: 7px 7px;
+  cursor: pointer;
+  user-select: none;
 }
 
 ul li:last-child {
   margin-bottom: 7px;
+}
+
+li:hover {
+  color: #00A0FF;
+  text-decoration-line: underline;
+}
+
+li:active {
+  color: #55B6FF;
 }
