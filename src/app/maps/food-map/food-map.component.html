@@ -1,1 +1,21 @@
-<div id="map"></div>
+<div class="container">
+  <ya-map
+    [center]="[56.842080028192726,60.65064103131453]"
+    [zoom]="15"
+    [state]="{ controls: [] }"
+  >
+    <ya-placemark *ngFor="let point of points"
+      [geometry]="point.coords"
+      [properties]="point.properties"
+      [options]="{ preset: 'islands#redDotIcon' }"
+    ></ya-placemark>
+<!--    <ya-placemark [geometry]="[56.84405608641395,60.65399166931147]">Столовая ГУКа</ya-placemark>-->
+<!--    <ya-placemark [geometry]="[56.84155606786889,60.654337999999996]">Has Kebab</ya-placemark>-->
+<!--    <ya-placemark [geometry]="[56.83989636680168,60.65098611780828]">Bakerkebab</ya-placemark>-->
+<!--    <ya-placemark [geometry]="[56.842497067871264,60.643791499999985]">Вилка-Ложка</ya-placemark>-->
+<!--    <ya-placemark [geometry]="[56.841788449199086,60.637593682882255]">Pizza Mia</ya-placemark>-->
+<!--    <ya-placemark [geometry]="[56.83837827306169,60.63821523065366]">Вкусно и точка</ya-placemark>-->
+<!--    <ya-placemark [geometry]="[56.84640126302482,60.653646963396945]">Вкусно и сытно</ya-placemark>-->
+  </ya-map>
+</div>
+<p>Перед вами карта с отметками лучших закусочных вблизи ИРИТ-РТФ по мнению опрошенных студентов.</p>

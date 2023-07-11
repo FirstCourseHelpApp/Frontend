@@ -25,6 +25,7 @@
     "@taiga-ui/icons": "^3.35.0",
     "@taiga-ui/kit": "^3.35.0",
     "@tinkoff/ng-dompurify": "3.0.0",
+    "angular8-yandex-maps": "^15.0.0",
     "apollo-angular": "^4.2.0",
     "dompurify": "2.2.9",
     "graphql": "^16.7.1",

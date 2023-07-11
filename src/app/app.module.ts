@@ -32,6 +32,12 @@ import { AuthComponent } from './auth/auth.component';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FoodMapComponent } from './maps/food-map/food-map.component';
+import { AngularYandexMapsModule, YaConfig } from 'angular8-yandex-maps';
+
+const mapConfig: YaConfig = {
+  apikey: '8c2cdcb1-d99b-4933-bae4-58cac30e0d02',
+  lang: 'ru_RU',
+};
 
 @NgModule({
   declarations: [
@@ -66,7 +72,8 @@ import { FoodMapComponent } from './maps/food-map/food-map.component';
     TuiInputModule,
     TuiTextfieldControllerModule,
     GraphQLModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularYandexMapsModule.forRoot(mapConfig)
   ],
   providers: [{ provide: TUI_SANITIZER, useClass: NgDompurifySanitizer }],
   bootstrap: [AppComponent]
