@@ -29,6 +29,8 @@ import { SignUpComponent } from "./auth/sign-up/sign-up.component";
 import { LogInComponent } from "./auth/log-in/log-in.component";
 import {ComponentHostDirective} from "./directives/component-host.directive";
 import {AuthComponent} from "./auth/auth.component";
+import { GraphQLModule } from './graphql.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import {AuthComponent} from "./auth/auth.component";
     TuiRadioLabeledModule,
     TuiInputYearModule,
     TuiInputModule,
-    TuiTextfieldControllerModule
+    TuiTextfieldControllerModule,
+    GraphQLModule,
+    HttpClientModule
   ],
   providers: [{ provide: TUI_SANITIZER, useClass: NgDompurifySanitizer }],
   bootstrap: [AppComponent]
