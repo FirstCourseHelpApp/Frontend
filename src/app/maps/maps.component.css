@@ -37,10 +37,23 @@ h1 {
   font-family: "Golos Text", serif;
 }
 
+h2 {
+  font-family: "Aqum two Small caps", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  margin: 0 0 30px 0;
+}
+
+.buildings-info {
+  margin: 0 0 70px 0;
+}
+
 .buildings-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 0 0 20px 0;
 }
 
 .buildings-container img {

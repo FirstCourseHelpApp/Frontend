@@ -23,7 +23,10 @@
       "dom",
       "esnext.asynciterable"
     ],
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": [
+      "./node_modules/@yandex/ymaps3-types"
+    ]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

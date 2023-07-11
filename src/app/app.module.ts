@@ -21,16 +21,17 @@ import { CourseHomeComponent } from './course/course-home/course-home.component'
 import { CourseChapterComponent } from './course/course-chapter/course-chapter.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import {TuiInputModule, TuiInputYearModule, TuiRadioLabeledModule} from '@taiga-ui/kit';
-import { DictionaryComponent } from "./dictionary/dictionary.component";
-import { CharactersComponent } from "./characters/characters.component";
-import { MapsComponent } from "./maps/maps.component";
-import { SignUpComponent } from "./auth/sign-up/sign-up.component";
-import { LogInComponent } from "./auth/log-in/log-in.component";
-import {ComponentHostDirective} from "./directives/component-host.directive";
-import {AuthComponent} from "./auth/auth.component";
+import { TuiInputModule, TuiInputYearModule, TuiRadioLabeledModule } from '@taiga-ui/kit';
+import { DictionaryComponent } from './dictionary/dictionary.component';
+import { CharactersComponent } from './characters/characters.component';
+import { MapsComponent } from './maps/maps.component';
+import { SignUpComponent } from './auth/sign-up/sign-up.component';
+import { LogInComponent } from './auth/log-in/log-in.component';
+import { ComponentHostDirective } from './directives/component-host.directive';
+import { AuthComponent } from './auth/auth.component';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FoodMapComponent } from './maps/food-map/food-map.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { HttpClientModule } from '@angular/common/http';
     SignUpComponent,
     LogInComponent,
     ComponentHostDirective,
-    AuthComponent
+    AuthComponent,
+    FoodMapComponent
   ],
   imports: [
     BrowserModule,
