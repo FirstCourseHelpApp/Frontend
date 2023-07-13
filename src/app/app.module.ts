@@ -33,6 +33,7 @@ import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FoodMapComponent } from './maps/food-map/food-map.component';
 import { AngularYandexMapsModule, YaConfig } from 'angular8-yandex-maps';
+import {CabinetComponent} from "./navigation/cabinet/cabinet.component";
 
 const mapConfig: YaConfig = {
   apikey: '8c2cdcb1-d99b-4933-bae4-58cac30e0d02',
@@ -57,7 +58,8 @@ const mapConfig: YaConfig = {
     LogInComponent,
     ComponentHostDirective,
     AuthComponent,
-    FoodMapComponent
+    FoodMapComponent,
+    CabinetComponent
   ],
   imports: [
     BrowserModule,

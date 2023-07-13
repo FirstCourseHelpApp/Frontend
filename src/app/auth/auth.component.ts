@@ -4,7 +4,6 @@ import { fromEvent, Observable, Subscription } from 'rxjs';
 import { ComponentHostDirective } from '../directives/component-host.directive';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LogInComponent } from './log-in/log-in.component';
-import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'auth',
@@ -19,9 +18,7 @@ export class AuthComponent implements OnInit {
   private _documentClick$: Observable<Event> = fromEvent(document, 'click');
   private _documentKeyDown$: Observable<Event> = fromEvent(document, 'keydown');
 
-  constructor(private readonly _authService: AuthService,
-              private readonly _router: Router,
-              private readonly _route: ActivatedRoute) {}
+  constructor(private readonly _authService: AuthService) {}
 
   public ngOnInit(): void {
     this._subs.push(

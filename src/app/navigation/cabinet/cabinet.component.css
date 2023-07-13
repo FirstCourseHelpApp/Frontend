@@ -1,0 +1,29 @@
+.container {
+  position: fixed;
+  top: 50px;
+  right: 18px;
+  width: 220px;
+  height: fit-content;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  font-family: "Golos UI", serif;
+  font-size: 18px;
+  color: #171934;
+  font-weight: 500;
+  width: 100%;
+  background: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+button:hover {
+  color: #00A0FF;
+}
+
+button:active {
+  color: #B2CFFF;
+}
