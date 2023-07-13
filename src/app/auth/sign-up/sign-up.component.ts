@@ -22,7 +22,10 @@ export class SignUpComponent {
   }
 
   public onSubmit(): void {
-    console.log(this.signUpForm);
+    this._authService.registerUser({
+      email: this.signUpForm.controls.email.value!,
+      password: this.signUpForm.controls.password.value!
+    });
     this._authService.changeOpenness(false);
   }
 

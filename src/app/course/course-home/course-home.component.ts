@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {CourseService} from "../../services/course.service";
 
 @Component({
   selector: 'course-home',
@@ -53,4 +54,6 @@ export class CourseHomeComponent {
       ]
     }
   ];
+
+  constructor(private readonly _courseService: CourseService) {}
 }

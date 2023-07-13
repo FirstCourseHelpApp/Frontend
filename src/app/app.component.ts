@@ -1,5 +1,7 @@
-import {Component, OnInit} from '@angular/core';
-import { Apollo, gql } from 'apollo-angular';
+import {Component, OnInit, ViewChild, ViewContainerRef} from '@angular/core';
+import {ComponentHostDirective} from "./directives/component-host.directive";
+import {AuthService} from "./services/auth.service";
+import {AuthComponent} from "./auth/auth.component";
 
 @Component({
   selector: 'app-root',
@@ -7,28 +9,23 @@ import { Apollo, gql } from 'apollo-angular';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  constructor(private readonly _apollo: Apollo) {
-  }
+  @ViewChild(ComponentHostDirective, {static: true}) public componentsHost!: ComponentHostDirective;
+
+  constructor(private readonly _authService: AuthService) {}
 
   public ngOnInit(): void {
-    this._apollo
-      .watchQuery<any>({
-        query: gql`
-        query GetChapters {
-          chapters {
-            id
-            name
-            order
-            successRate
-            subChapters {
-              name
-            }
-          }
-        }
-      `,
-      })
-      .valueChanges.subscribe(({data}): void  => {
-        console.log(data);
-      });
+    this._authService.modalOpenness$.subscribe((openness: boolean): void => {
+      if (openness) {
+        this.renderAuthComponent();
+      } else {
+        this.componentsHost.viewContainerRef.clear();
+      }
+    });
+  }
+
+  public renderAuthComponent(): void {
+    const containerRef: ViewContainerRef = this.componentsHost.viewContainerRef;
+    containerRef.clear();
+    containerRef.createComponent<AuthComponent>(AuthComponent);
   }
 }

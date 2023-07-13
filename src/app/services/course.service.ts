@@ -1,12 +1,38 @@
 import { Injectable } from '@angular/core';
 import { TestQuestion } from "../models/test.model";
-import { Chapter } from "../models/chapter.model";
+import { Chapter } from '../models/chapter.model';
+import { Apollo, gql } from 'apollo-angular';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class CourseService {
+  public courseData: [] = [];
+
+  constructor(private readonly _apollo: Apollo) {
+    this._apollo
+      .watchQuery<any>({
+        query: gql`
+        query GetChapters($input: AuthorizeUserInput!) {
+          chapterWithUserProgress(input: $input) {
+            id
+            name
+            order
+            successRate
+            subChapters {
+              name
+            }
+          }
+        }
+      `,
+      })
+      .valueChanges.subscribe(({data}): void  => {
+      console.log(data);
+      this.courseData = data;
+    });
+  }
+
   public course: Chapter[] = [
     {
       id: '0',

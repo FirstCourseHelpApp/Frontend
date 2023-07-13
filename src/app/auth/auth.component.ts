@@ -24,7 +24,6 @@ export class AuthComponent implements OnInit {
               private readonly _route: ActivatedRoute) {}
 
   public ngOnInit(): void {
-    this._authService.changeOpenness(true);
     this._subs.push(
       this._authService.modalOpenness$.subscribe((isOpening: boolean): void => {
         if (!isOpening) {
@@ -65,7 +64,6 @@ export class AuthComponent implements OnInit {
       this._documentClick$.subscribe((evt: Event): void => {
         const authRef: Element = document.querySelector('.auth')!;
         if (!evt.composedPath().includes(authRef!)) {
-          this._authService.changeOpenness(false);
           this.closeModal();
         }
       })
@@ -76,7 +74,6 @@ export class AuthComponent implements OnInit {
     this._subs.push(
       this._documentKeyDown$.subscribe((evt: Event): void => {
         if ((evt as KeyboardEvent).code === 'Escape') {
-          this._authService.changeOpenness(false);
           this.closeModal();
         }
       })
@@ -86,6 +83,6 @@ export class AuthComponent implements OnInit {
   public closeModal(): void {
     this._subs.forEach((subscription: Subscription) => subscription.unsubscribe());
     this._subs = [];
-    this._router.navigate(['./'], {relativeTo: this._route.parent}).then();
+    this._authService.changeOpenness(false);
   }
 }

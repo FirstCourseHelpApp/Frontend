@@ -10,6 +10,7 @@ import { DictionaryComponent } from './dictionary/dictionary.component';
 import { CharactersComponent } from './characters/characters.component';
 import { MapsComponent } from './maps/maps.component';
 import { AuthComponent } from './auth/auth.component';
+import {AuthGuard} from "./auth.guard";
 
 const routes: Routes = [
   {
@@ -20,13 +21,6 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
-    children: [
-      {
-        path: 'auth',
-        pathMatch: 'full',
-        component: AuthComponent
-      }
-    ]
   },
   {
     path: 'dictionary',
@@ -43,6 +37,7 @@ const routes: Routes = [
   {
     path: 'course',
     component: CourseComponent,
+    canActivate: [AuthGuard],
     children: [
       {
         path: '',

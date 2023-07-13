@@ -22,11 +22,13 @@ export class LogInComponent {
     email: new FormControl('', Validators.required)
   });
 
-  constructor(private readonly _authService: AuthService) {
-  }
+  constructor(private readonly _authService: AuthService) {}
 
   public onSubmit(): void {
-    console.log(this.logInForm);
+    this._authService.authorizeUser({
+      email: this.logInForm.controls.email.value!,
+      password: this.logInForm.controls.password.value!
+    });
     this._authService.changeOpenness(false);
   }
 
