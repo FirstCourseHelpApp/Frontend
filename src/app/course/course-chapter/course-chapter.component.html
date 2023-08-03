@@ -5,7 +5,7 @@
 <div class="chapter-container">
   <div class="chapter-line"></div>
   <ul>
-    <li *ngFor="let subchapter of chapter.subchapters">
+    <li *ngFor="let subchapter of chapter.subchapters" routerLink="/course/article">
       {{subchapter}}
     </li>
   </ul>

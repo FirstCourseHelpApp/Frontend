@@ -14,7 +14,7 @@ h2 {
 .chapters-line {
   background: #00A0FF;
   width: 4px;
-  height: 1076px;
+  height: 1280px;
   border-radius: 30px;
 }
 
@@ -46,6 +46,19 @@ h3 {
   background-size: 6px 6px;
   cursor: pointer;
   user-select: none;
+}
+
+h3 {
+  cursor: pointer;
+}
+
+h3:hover {
+  color: #00A0FF;
+  text-decoration-line: underline;
+}
+
+h3:active {
+  color: #55B6FF;
 }
 
 .article-list li:hover {

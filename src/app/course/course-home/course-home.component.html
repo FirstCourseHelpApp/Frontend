@@ -3,10 +3,13 @@
   <div class="chapters-line"></div>
   <ol class="chapters-list">
     <li *ngFor="let chapter of chapters; index as i">
-      <h3>{{i + 1}}. {{chapter.name}}</h3>
+      <h3 routerLink="/course/chapter">{{i + 1}}. {{chapter.name}}</h3>
       <ul class="article-list">
-        <li *ngFor="let subchapter of chapter.subchapters">
+        <li *ngFor="let subchapter of chapter.subchapters" routerLink="/course/article">
           {{subchapter}}
+        </li>
+        <li routerLink="/course/test">
+          Тест
         </li>
       </ul>
     </li>

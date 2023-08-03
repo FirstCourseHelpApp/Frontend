@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./course.component.css']
 })
 export class CourseComponent {
-  public progressPercent: number = 100;
+  public progressPercent: number = 60;
   public chapters: { id: number, isCompleted: boolean }[] = [
     {
       id: 0,
