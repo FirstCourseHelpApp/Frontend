@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./course.component.css']
 })
 export class CourseComponent {
-  public progressPercent: number = 60;
   public chapters: { id: number, isCompleted: boolean }[] = [
     {
       id: 0,
@@ -29,4 +28,12 @@ export class CourseComponent {
       isCompleted: false
     },
   ];
+
+  public progressPercent: number = this.chapters.reduce(
+    (accumulator, currentValue) => {
+      let value: number = currentValue.isCompleted ? 100/this.chapters.length : 0;
+      return accumulator + value;
+    },
+    0
+  );
 }
